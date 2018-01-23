@@ -5,13 +5,31 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <ion-list margin="10px">
+    <ion-item class="ion-item-no-top-border" no-padding>
+      <ion-label stacked>Name</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item no-padding>
+      <ion-label stacked>Birth date</ion-label>
+      <ion-input type="date"></ion-input>
+    </ion-item>
+
+    <ion-item no-padding>
+      <ion-label stacked>Email</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item no-padding>
+      <ion-label stacked>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <ion-item no-padding>
+      <ion-label stacked>Confirm Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <button ion-button class="submit-button" full block>Sign Up</button>
+  </ion-list>
 </ion-content>

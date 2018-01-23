@@ -1,10 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<ion-header>
+  <ion-navbar>
+    <ion-title>My Tutor</ion-title>
+  </ion-navbar>
+</ion-header>
 
-</body>
-</html>
+<ion-content padding>
+  <div position="relative" margin-top="20%" style="display: flex; justify-content: center;">
+    <img height="200" width="250" align="middle" src="../../assets//icon/Logo.png">
+  </div>
+  <div class="login-box">
+    <ion-list margin="10px">
+      <ion-item no-padding>
+        <ion-label padding-left="5px">
+          <ion-icon name="mail"></ion-icon>
+        </ion-label>
+        <ion-input placeholder="email"></ion-input>
+      </ion-item>
+
+      <ion-item no-padding>
+        <ion-label padding-left="5px">
+          <ion-icon name="lock"></ion-icon>
+        </ion-label>
+        <ion-input type="password" placeholder="password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button class="submit-button" full block>Sign In</button>
+    <button ion-button class="signup-button" full clear >Create New Account</button>
+  </div>
+</ion-content>
